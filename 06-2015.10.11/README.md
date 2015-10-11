@@ -2,6 +2,7 @@
 
 getInitialState在页面渲染之前会执行
 
+
 ```
 var UserList = React.createClass({
 
