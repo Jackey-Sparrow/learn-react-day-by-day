@@ -4,15 +4,39 @@
 (function (React, ReactDOM) {
     'use strict';
 
-    var CommentBox = React.createClass({
+    var CommentList = React.createClass({
         render: function () {
             return (
-                <div className='commentBox'>
-                    hello world! I am a commentBox
+                <div className='commentList'>
+                    Hello world! I am a commentList
                 </div>
             );
         }
     });
+
+    var CommentForm = React.createClass({
+        render: function () {
+            return (
+                <div className='commentForm'>
+                    hello world! I am commentForm
+                </div>
+            );
+        }
+    });
+
+    var CommentBox = React.createClass({
+        displayName: 'CommentBox',
+        render: function () {
+            return (
+                <div className='commentBox'>
+                    <h1>Comments</h1>
+                    <CommentList />
+                    <CommentForm />
+                </div>
+            );
+        }
+    });
+
 
     ReactDOM.render(
         <CommentBox />,
