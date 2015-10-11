@@ -1,4 +1,4 @@
-# react´«Öµ
+# reactä¼ å€¼
 
 ```
  var Introduction = React.createClass({
@@ -25,9 +25,9 @@
     });
 ```
 
-use this.props.xxxÈ¥ÄÃµ½¸¸Ç×ÉÏµÄÊôĞÔÖµ
+use this.props.xxxå»æ‹¿åˆ°çˆ¶äº²ä¸Šçš„å±æ€§å€¼
 
-ÀàËÆangularJsµÄdirective´«Öµ
+ç±»ä¼¼angularJsçš„directiveä¼ å€¼
 
 ```
 <element data-attr='xxx'></element>
