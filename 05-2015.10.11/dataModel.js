@@ -21,7 +21,7 @@
         render: function () {
             var users = this.props.users.map(function (user) {
                 return (
-                    <div>{user.userName}</div>
+                    <div key={user.id}>{user.userName}</div>
                 );
             });
             return (
