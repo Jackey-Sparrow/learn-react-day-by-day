@@ -30,20 +30,21 @@
         },
 
         loadUserList: function () {
+            var that = this;
             $.ajax({
                 type: 'POST',
                 url: 'users.json',
                 dataType: 'json',
                 success: function (data) {
-                    this.setState(
+                    that.setState(
                         {
                             userList: data
                         }
                     );
-                }.bind(this),
+                },
                 error: function (xhr, status, err) {
                     console.log(err);
-                }.bind(this)
+                }
             });
         },
         componentDidMount: function () {

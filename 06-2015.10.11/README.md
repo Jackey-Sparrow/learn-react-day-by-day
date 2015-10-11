@@ -55,3 +55,27 @@ componentDidMount: function () {
   this.loadUserList();
 },
 ```
+
+为啥要bind(this)，其实只是this指针的问题
+可以修改为(use that=this)
+
+```
+loadUserList: function () {
+    var that = this;
+    $.ajax({
+        type: 'POST',
+        url: 'users.json',
+        dataType: 'json',
+        success: function (data) {
+            that.setState(
+                {
+                    userList: data
+                }
+            );
+        },
+        error: function (xhr, status, err) {
+            console.log(err);
+        }
+    });
+},
+```
