@@ -38,7 +38,7 @@
         },
         getInitialState: function () {
             return {
-                userList: []//userModel.getUserList()
+                userList: []
             };
         },
         componentDidMount: function () {
