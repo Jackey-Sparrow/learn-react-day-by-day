@@ -1,4 +1,4 @@
-# 数据repeat
+# 鏁版嵁repeat
 
 ```
 var UserList = React.createClass({
@@ -18,7 +18,7 @@ var UserList = React.createClass({
 
 ```
 
-先把html拼凑出来
+鍏堟妸html鎷煎噾鍑烘潵
 ```
 var users = this.props.users.map(function (user) {
     return (
