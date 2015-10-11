@@ -5,9 +5,30 @@
     'use strict';
 
     var UserList = React.createClass({
+        getInitialState: function () {
+            return {
+                userList: [
+                    {
+                        "id": 1,
+                        "userName": "Jackey1",
+                        "age": 26
+                    },
+                    {
+                        "id": 2,
+                        "userName": "Jackey2",
+                        "age": 26
+                    }
+                ]
+            };
+        },
         render: function () {
+            var users = this.state.userList.map(function (user) {
+                return (
+                    <div key={user.id}>{user.userName} {user.age}</div>
+                );
+            });
             return (
-                <div>UserList</div>
+                <div>{users}</div>
             );
         }
     });
